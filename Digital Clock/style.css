@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("https://images.unsplash.com/photo-1731596691311-5955c052b66e?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YWVzdGhldGljJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D") no-repeat center center;
+    background-size: cover;  /* makes it cover full screen */
+}
+.clock{
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1),0px 10px 20px rgba(0,0,0,0.7);
+    height: 24vh;
+    border-radius: 12px;
+    padding: 20px;
+}
+.clock h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.clock span{
+    position: relative;
+    top: -13%;
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: 700;
+}
+@media (max-width: 768px) {
+  .clock {
+    max-width: 300px;
+    height: 20vh;
+    padding: 15px;
+  }
+  .clock h1 {
+    font-size: 2.5rem;
+  }
+  .clock span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .clock {
+    max-width: 250px;
+    height: auto;
+    padding: 10px;
+  }
+  .clock h1 {
+    font-size: 2rem;
+  }
+  .clock span {
+    font-size: 14px;
+    top: -8%;
+  }
+}
